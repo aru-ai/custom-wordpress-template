@@ -110,7 +110,7 @@ function mbt_customize_register(WP_Customize_Manager $wp_customize): void
     ]);
 
     $wp_customize->add_setting('mbt_header_height', [
-        'default'           => 80,
+        'default'           => 68,
         'sanitize_callback' => 'mbt_sanitize_header_height',
     ]);
     $wp_customize->add_control('mbt_header_height', [
@@ -210,12 +210,12 @@ function mbt_customize_register(WP_Customize_Manager $wp_customize): void
     ]);
 
     $wp_customize->add_setting('mbt_root_font_size', [
-        'default'           => 15,
+        'default'           => 14,
         'sanitize_callback' => 'mbt_sanitize_root_font_size',
     ]);
     $wp_customize->add_control('mbt_root_font_size', [
         'label'       => __('Base Font Size (px)', 'my-business-theme'),
-        'description' => __('Scales most front-end text because the theme uses rem-based typography. Default: 15px, with mobile screens slightly smaller.', 'my-business-theme'),
+        'description' => __('Scales most front-end text because the theme uses rem-based typography. Default: 14px, with desktop and mobile screens slightly adjusted for readability.', 'my-business-theme'),
         'section'     => 'mbt_global_styles',
         'type'        => 'number',
         'input_attrs' => [

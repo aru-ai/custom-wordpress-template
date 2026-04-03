@@ -108,13 +108,13 @@ function mbt_sanitize_header_width($value): int
 
 function mbt_sanitize_header_height($value): int
 {
-    return mbt_sanitize_absint_range($value, 80, 58, 180);
+    return mbt_sanitize_absint_range($value, 68, 58, 180);
 }
 
 function mbt_sanitize_root_font_size($value): float
 {
     if (!is_numeric($value)) {
-        return 15.0;
+        return 14.0;
     }
 
     return max(10.0, min(25.0, round((float) $value, 1)));

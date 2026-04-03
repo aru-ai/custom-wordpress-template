@@ -151,13 +151,13 @@ function mbt_inline_css_variables(): void
     $header_opacity         = mbt_sanitize_unit_interval(get_theme_mod('mbt_header_background_opacity', 0.58), 0.58);
     $header_overlay_opacity = round($header_opacity * 0.41, 2);
     $header_width           = mbt_sanitize_header_width(get_theme_mod('mbt_header_width', 1200));
-    $header_height          = mbt_sanitize_header_height(get_theme_mod('mbt_header_height', 80));
+    $header_height          = mbt_sanitize_header_height(get_theme_mod('mbt_header_height', 68));
     $header_height_tablet   = min($header_height, max(74, (int) round($header_height * 0.92)));
     $header_height_mobile   = min($header_height_tablet, max(58, (int) round($header_height * 0.72)));
     $logo_strip_duration    = mbt_sanitize_logo_strip_speed(get_theme_mod('mbt_logo_strip_speed', 28));
     $services_highlight     = sanitize_hex_color(get_theme_mod('mbt_services_highlight_color', '#c8ab6e')) ?: '#c8ab6e';
     $cta_status_color       = sanitize_hex_color(get_theme_mod('mbt_cta_status_color', '#7df33b')) ?: '#7df33b';
-    $root_font_size         = mbt_sanitize_root_font_size(get_theme_mod('mbt_root_font_size', 15));
+    $root_font_size         = mbt_sanitize_root_font_size(get_theme_mod('mbt_root_font_size', 14));
 
     $vars = [
         '--mbt-color-primary'            => get_theme_mod('mbt_color_primary', '#c8ab6e'),
