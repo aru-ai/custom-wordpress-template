@@ -100,9 +100,35 @@ h6 {
   margin: 0 0 18px;
   color: var(--mbt-color-secondary);
   font-family: var(--mbt-font-body);
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.02;
   letter-spacing: -0.04em;
+}
+
+.mbt-section-heading h2,
+.mbt-hero__enquiry-main h2,
+.mbt-featured-overview__title,
+.mbt-services-showcase__title,
+.mbt-card__title,
+.mbt-service-feature-card__title,
+.mbt-capabilities-carousel__title,
+.mbt-capability-card__title,
+.mbt-about-business__title-main,
+.mbt-contact-section__title-main,
+.mbt-split-layout__content h2,
+.mbt-contact-cta h2,
+.mbt-faq-layout__intro h2,
+.mbt-owner-section__title-main,
+.mbt-portfolio-showcase__title,
+.mbt-testimonials-showcase__title,
+.mbt-process-section__title-main,
+.mbt-process-card h3,
+.mbt-faq-section__title-main,
+.mbt-faq-item summary,
+.mbt-service-areas__title-main,
+.mbt-footer__title,
+.mbt-entry__title {
+  font-weight: 600;
 }
 
 p {
@@ -189,7 +215,7 @@ button {
 }
 
 .mbt-section-heading h2 {
-  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  font-size: clamp(1.95rem, 3.4vw, 3.05rem);
 }
 
 .mbt-heading-graphic {
@@ -680,7 +706,7 @@ button.mbt-button {
   margin-left: 0.14em;
   font-family: var(--mbt-font-heading);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @media (min-width: 981px) {
@@ -904,7 +930,7 @@ button.mbt-button {
 .mbt-hero__enquiry-main h2 {
   margin-bottom: 18px;
   color: #ffffff;
-  font-size: clamp(2rem, 3.2vw, 3.2rem);
+  font-size: clamp(1.7rem, 2.45vw, 2.45rem);
 }
 
 .mbt-inline-form {
@@ -1226,7 +1252,7 @@ button.mbt-button {
   z-index: 1;
   margin-bottom: 8px;
   color: #ffffff;
-  font-size: clamp(3rem, 5vw, 5.2rem);
+  font-size: clamp(2.5rem, 4.2vw, 4.15rem);
   line-height: 0.95;
   letter-spacing: -0.05em;
 }
@@ -1237,9 +1263,9 @@ button.mbt-button {
   margin: 0 0 26px;
   color: var(--mbt-color-primary);
   font-family: var(--mbt-font-heading);
-  font-size: clamp(2.5rem, 4.6vw, 4.8rem);
+  font-size: clamp(2rem, 3.7vw, 3.6rem);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 0.96;
   letter-spacing: -0.04em;
 }
@@ -1338,7 +1364,7 @@ button.mbt-button {
 
 .mbt-card__title {
   margin-bottom: 12px;
-  font-size: clamp(1.45rem, 2vw, 2rem);
+  font-size: clamp(1.28rem, 1.65vw, 1.72rem);
 }
 
 .mbt-media-frame {
@@ -1423,7 +1449,7 @@ button.mbt-button {
 
 .mbt-services-showcase__title {
   margin-bottom: 0;
-  font-size: clamp(2.6rem, 5.4vw, 5rem);
+  font-size: clamp(2.2rem, 4.5vw, 4rem);
   line-height: 0.98;
 }
 
@@ -1432,7 +1458,7 @@ button.mbt-button {
   color: var(--mbt-services-highlight);
   font-family: var(--mbt-font-heading);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -0.03em;
 }
 
@@ -1481,7 +1507,7 @@ button.mbt-button {
 .mbt-service-feature-card__title {
   margin-bottom: 0;
   color: #262320;
-  font-size: clamp(1.5rem, 2.2vw, 2.4rem);
+  font-size: clamp(1.32rem, 1.85vw, 2rem);
   line-height: 1.1;
   text-align: center;
 }
@@ -1550,7 +1576,7 @@ button.mbt-button {
 
 .mbt-capabilities-carousel__title {
   color: var(--mbt-color-secondary);
-  font-size: clamp(3rem, 4.6vw, 5rem);
+  font-size: clamp(2.45rem, 4vw, 4.05rem);
   line-height: 0.96;
 }
 
@@ -1563,7 +1589,7 @@ button.mbt-button {
   color: var(--mbt-color-primary);
   font-family: var(--mbt-font-heading);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -0.03em;
 }
 
@@ -1721,7 +1747,7 @@ button.mbt-button {
   max-width: 88%;
   margin: 0;
   color: #ffffff;
-  font-size: clamp(1.72rem, 2.25vw, 2.52rem);
+  font-size: clamp(1.48rem, 1.95vw, 2.12rem);
   line-height: 0.98;
 }
 
@@ -1935,7 +1961,7 @@ button.mbt-button {
 
 .mbt-about-business__title-main {
   color: var(--mbt-color-secondary);
-  font-size: clamp(3rem, 4.8vw, 4.8rem);
+  font-size: clamp(2.45rem, 4vw, 4rem);
   line-height: 0.96;
   letter-spacing: -0.055em;
 }
@@ -1943,9 +1969,9 @@ button.mbt-button {
 .mbt-about-business__title-accent {
   color: var(--mbt-color-primary);
   font-family: var(--mbt-font-heading);
-  font-size: clamp(2.7rem, 4.4vw, 4.4rem);
+  font-size: clamp(2.05rem, 3.4vw, 3.45rem);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 0.96;
   letter-spacing: -0.05em;
 }
@@ -2112,7 +2138,7 @@ button.mbt-button {
 
 .mbt-contact-section__title-main {
   color: var(--mbt-color-secondary);
-  font-size: clamp(3rem, 4.8vw, 4.8rem);
+  font-size: clamp(2.45rem, 4vw, 4rem);
   line-height: 0.96;
   letter-spacing: -0.055em;
 }
@@ -2120,9 +2146,9 @@ button.mbt-button {
 .mbt-contact-section__title-accent {
   color: var(--mbt-color-primary);
   font-family: var(--mbt-font-heading);
-  font-size: clamp(2.7rem, 4.4vw, 4.4rem);
+  font-size: clamp(2.05rem, 3.4vw, 3.45rem);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 0.96;
   letter-spacing: -0.05em;
 }
@@ -2244,7 +2270,7 @@ a.mbt-contact-section__detail-value:focus-visible {
 .mbt-split-layout__content h2,
 .mbt-contact-cta h2,
 .mbt-faq-layout__intro h2 {
-  font-size: clamp(2.3rem, 4vw, 3.7rem);
+  font-size: clamp(1.95rem, 3.35vw, 3rem);
 }
 
 .mbt-about-owner {
@@ -2362,7 +2388,7 @@ a.mbt-contact-section__detail-value:focus-visible {
 }
 
 .mbt-owner-section__title-main {
-  font-size: clamp(2.8rem, 4.7vw, 4.5rem);
+  font-size: clamp(2.3rem, 3.85vw, 3.8rem);
   letter-spacing: -0.06em;
 }
 
@@ -2370,9 +2396,9 @@ a.mbt-contact-section__detail-value:focus-visible {
   margin-top: 0.06em;
   color: var(--mbt-color-primary);
   font-family: var(--mbt-font-heading);
-  font-size: clamp(2.55rem, 4.15vw, 4rem);
+  font-size: clamp(1.95rem, 3.15vw, 3.2rem);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -0.05em;
 }
 
@@ -2423,7 +2449,7 @@ a.mbt-contact-section__detail-value:focus-visible {
 .mbt-portfolio-showcase__title {
   margin-bottom: 0;
   color: var(--mbt-color-secondary);
-  font-size: clamp(3rem, 5.2vw, 4.9rem);
+  font-size: clamp(2.45rem, 4.2vw, 4.05rem);
   line-height: 0.98;
   letter-spacing: -0.06em;
 }
@@ -2433,7 +2459,7 @@ a.mbt-contact-section__detail-value:focus-visible {
   color: var(--mbt-color-primary);
   font-family: var(--mbt-font-heading);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -0.05em;
 }
 
@@ -2624,7 +2650,7 @@ a.mbt-contact-section__detail-value:focus-visible {
 
 .mbt-testimonials-showcase__title {
   color: #ffffff;
-  font-size: clamp(2.8rem, 4.6vw, 4.5rem);
+  font-size: clamp(2.3rem, 3.9vw, 3.75rem);
   line-height: 0.98;
   letter-spacing: -0.055em;
 }
@@ -2634,7 +2660,7 @@ a.mbt-contact-section__detail-value:focus-visible {
   color: var(--mbt-color-primary);
   font-family: var(--mbt-font-heading);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -0.04em;
 }
 
@@ -3152,7 +3178,7 @@ a.mbt-contact-section__detail-value:focus-visible {
 
 .mbt-process-section__title-main {
   color: var(--mbt-color-secondary);
-  font-size: clamp(2.8rem, 4.4vw, 4rem);
+  font-size: clamp(2.25rem, 3.65vw, 3.45rem);
   line-height: 0.98;
   letter-spacing: -0.055em;
 }
@@ -3160,9 +3186,9 @@ a.mbt-contact-section__detail-value:focus-visible {
 .mbt-process-section__title-accent {
   color: var(--mbt-color-primary);
   font-family: var(--mbt-font-heading);
-  font-size: clamp(2.3rem, 3.8vw, 3.6rem);
+  font-size: clamp(1.9rem, 3vw, 2.85rem);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 0.96;
   letter-spacing: -0.05em;
 }
@@ -3224,7 +3250,7 @@ a.mbt-contact-section__detail-value:focus-visible {
   max-width: 72%;
   margin-bottom: 14px;
   color: var(--mbt-color-secondary);
-  font-size: clamp(1.5rem, 2vw, 1.9rem);
+  font-size: clamp(1.3rem, 1.65vw, 1.65rem);
   line-height: 1.02;
   letter-spacing: -0.045em;
 }
@@ -3505,7 +3531,7 @@ a.mbt-contact-section__detail-value:focus-visible {
 
 .mbt-faq-section__title-main {
   color: var(--mbt-color-secondary);
-  font-size: clamp(2.8rem, 4.4vw, 4rem);
+  font-size: clamp(2.2rem, 3.65vw, 3.35rem);
   line-height: 0.98;
   letter-spacing: -0.055em;
 }
@@ -3513,9 +3539,9 @@ a.mbt-contact-section__detail-value:focus-visible {
 .mbt-faq-section__title-accent {
   color: var(--mbt-color-primary);
   font-family: var(--mbt-font-heading);
-  font-size: clamp(2.3rem, 3.8vw, 3.2rem);
+  font-size: clamp(1.9rem, 3vw, 2.7rem);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 0.96;
   letter-spacing: -0.05em;
 }
@@ -3550,9 +3576,9 @@ a.mbt-contact-section__detail-value:focus-visible {
   padding: 12px 14px 12px 16px;
   color: #3a342f;
   font-family: var(--mbt-font-heading);
-  font-size: clamp(1.8rem, 2vw, 2.3rem);
+  font-size: clamp(1.55rem, 1.7vw, 1.95rem);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.02;
   letter-spacing: -0.03em;
 }
@@ -3684,8 +3710,8 @@ a.mbt-contact-section__detail-value:focus-visible {
 
 .mbt-service-areas__title-main {
   color: #ffffff;
-  font-size: clamp(2.5rem, 4.2vw, 3.75rem);
-  font-weight: 800;
+  font-size: clamp(2.05rem, 3.45vw, 3.05rem);
+  font-weight: 600;
   letter-spacing: -0.04em;
   line-height: 0.94;
 }
@@ -3693,9 +3719,9 @@ a.mbt-contact-section__detail-value:focus-visible {
 .mbt-service-areas__title-accent {
   color: var(--mbt-color-primary);
   font-family: var(--mbt-font-heading);
-  font-size: clamp(1.95rem, 3.45vw, 2.95rem);
+  font-size: clamp(1.65rem, 2.7vw, 2.45rem);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 0.94;
 }
 
@@ -3835,8 +3861,8 @@ a.mbt-contact-section__detail-value:focus-visible {
   margin: 0 0 34px;
   color: #ffffff;
   font-family: var(--mbt-font-heading);
-  font-size: clamp(2rem, 2.35vw, 2.5rem);
-  font-weight: 500;
+  font-size: clamp(1.75rem, 2vw, 2.2rem);
+  font-weight: 600;
   line-height: 1;
 }
 
@@ -4045,7 +4071,7 @@ a.mbt-contact-section__detail-value:focus-visible {
 }
 
 .mbt-entry__title {
-  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  font-size: clamp(2.2rem, 4.6vw, 3.9rem);
 }
 
 .mbt-entry__image {
@@ -4367,11 +4393,11 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-about-business__title-main {
-    font-size: clamp(2.6rem, 7vw, 4rem);
+    font-size: clamp(2.2rem, 6vw, 3.35rem);
   }
 
   .mbt-about-business__title-accent {
-    font-size: clamp(2.3rem, 6.4vw, 3.7rem);
+    font-size: clamp(1.9rem, 5.4vw, 3rem);
   }
 
   .mbt-about-business__text {
@@ -4429,11 +4455,11 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-contact-section__title-main {
-    font-size: clamp(2.6rem, 7vw, 4rem);
+    font-size: clamp(2.15rem, 5.9vw, 3.25rem);
   }
 
   .mbt-contact-section__title-accent {
-    font-size: clamp(2.3rem, 6.4vw, 3.7rem);
+    font-size: clamp(1.85rem, 5.2vw, 2.9rem);
   }
 
   .mbt-contact-section__text {
@@ -4474,11 +4500,11 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-process-section__title-main {
-    font-size: clamp(2.6rem, 7vw, 4rem);
+    font-size: clamp(2.1rem, 5.8vw, 3.15rem);
   }
 
   .mbt-process-section__title-accent {
-    font-size: clamp(2.25rem, 6.2vw, 3.5rem);
+    font-size: clamp(1.8rem, 5vw, 2.75rem);
   }
 
   .mbt-process-grid {
@@ -4509,11 +4535,11 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-faq-section__title-main {
-    font-size: clamp(2.5rem, 7vw, 3.8rem);
+    font-size: clamp(2.05rem, 5.7vw, 3.05rem);
   }
 
   .mbt-faq-section__title-accent {
-    font-size: clamp(2.2rem, 6vw, 3.2rem);
+    font-size: clamp(1.8rem, 4.9vw, 2.6rem);
   }
 
   .mbt-faq-section__text {
@@ -4625,11 +4651,11 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-owner-section__title-main {
-    font-size: clamp(2.55rem, 7vw, 3.9rem);
+    font-size: clamp(2.1rem, 5.8vw, 3.2rem);
   }
 
   .mbt-owner-section__title-accent {
-    font-size: clamp(2.3rem, 6.4vw, 3.5rem);
+    font-size: clamp(1.85rem, 5.1vw, 2.85rem);
   }
 
   .mbt-owner-section__text {
@@ -4655,15 +4681,15 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-featured-overview__title {
-    font-size: clamp(2.6rem, 7vw, 4.2rem);
+    font-size: clamp(2.25rem, 6.2vw, 3.55rem);
   }
 
   .mbt-featured-overview__accent {
-    font-size: clamp(2.2rem, 6vw, 3.8rem);
+    font-size: clamp(1.95rem, 5.5vw, 3.2rem);
   }
 
   .mbt-services-showcase__title {
-    font-size: clamp(2.2rem, 7vw, 3.6rem);
+    font-size: clamp(1.95rem, 6vw, 3rem);
   }
 
   .mbt-services-showcase__title-accent {
@@ -4688,7 +4714,7 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-capabilities-carousel__title {
-    font-size: clamp(2.6rem, 7vw, 4.2rem);
+    font-size: clamp(2.2rem, 6.1vw, 3.45rem);
   }
 
   .mbt-capabilities-carousel__actions {
@@ -4717,7 +4743,7 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-portfolio-showcase__title {
-    font-size: clamp(2.55rem, 7vw, 4rem);
+    font-size: clamp(2.15rem, 6vw, 3.3rem);
   }
 
   .mbt-portfolio-showcase__title-accent {
@@ -4755,7 +4781,7 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-testimonials-showcase__title {
-    font-size: clamp(2.5rem, 7vw, 3.8rem);
+    font-size: clamp(2.1rem, 5.9vw, 3.15rem);
   }
 
   .mbt-testimonials-showcase__title-accent {
@@ -4979,12 +5005,12 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-featured-overview__title {
-    font-size: clamp(2.2rem, 10.5vw, 3.25rem);
+    font-size: clamp(1.9rem, 9.2vw, 2.6rem);
   }
 
   .mbt-featured-overview__accent {
     margin-bottom: 20px;
-    font-size: clamp(2rem, 9vw, 3rem);
+    font-size: clamp(1.65rem, 8vw, 2.3rem);
   }
 
   .mbt-featured-overview__text p {
@@ -5073,14 +5099,14 @@ a.mbt-contact-section__detail-value:focus-visible {
   .mbt-owner-section__content h2,
   .mbt-contact-cta h2,
   .mbt-faq-layout__intro h2 {
-    font-size: clamp(2rem, 11vw, 2.8rem);
+    font-size: clamp(1.7rem, 9vw, 2.35rem);
   }
 
   .mbt-hero__enquiry-main h2 {
     max-width: none;
     padding-right: min(34vw, 140px);
     margin-bottom: 16px;
-    font-size: clamp(1.72rem, 8.8vw, 2.2rem);
+    font-size: clamp(1.48rem, 7.6vw, 1.9rem);
     line-height: 0.98;
   }
 
@@ -5115,11 +5141,11 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-about-business__title-main {
-    font-size: clamp(2.4rem, 11vw, 3.15rem);
+    font-size: clamp(2rem, 9.6vw, 2.55rem);
   }
 
   .mbt-about-business__title-accent {
-    font-size: clamp(2rem, 10vw, 2.95rem);
+    font-size: clamp(1.72rem, 8.6vw, 2.2rem);
   }
 
   .mbt-about-business__text p {
@@ -5192,11 +5218,11 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-contact-section__title-main {
-    font-size: clamp(2rem, 9.6vw, 2.65rem);
+    font-size: clamp(1.8rem, 8.8vw, 2.3rem);
   }
 
   .mbt-contact-section__title-accent {
-    font-size: clamp(1.82rem, 8.6vw, 2.35rem);
+    font-size: clamp(1.6rem, 7.8vw, 2rem);
   }
 
   .mbt-contact-section__text p {
@@ -5295,11 +5321,11 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-process-section__title-main {
-    font-size: clamp(2.35rem, 10.6vw, 3.1rem);
+    font-size: clamp(1.95rem, 9.2vw, 2.45rem);
   }
 
   .mbt-process-section__title-accent {
-    font-size: clamp(1.95rem, 9.4vw, 2.7rem);
+    font-size: clamp(1.62rem, 7.8vw, 2.08rem);
   }
 
   .mbt-process-section__actions {
@@ -5364,11 +5390,11 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-faq-section__title-main {
-    font-size: clamp(2.2rem, 10vw, 3rem);
+    font-size: clamp(1.9rem, 9vw, 2.4rem);
   }
 
   .mbt-faq-section__title-accent {
-    font-size: clamp(1.95rem, 8.8vw, 2.6rem);
+    font-size: clamp(1.62rem, 7.7vw, 2.05rem);
   }
 
   .mbt-faq-section__text p {
@@ -5525,11 +5551,11 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-owner-section__title-main {
-    font-size: clamp(2.35rem, 10.6vw, 3.1rem);
+    font-size: clamp(1.95rem, 9.2vw, 2.45rem);
   }
 
   .mbt-owner-section__title-accent {
-    font-size: clamp(2rem, 9.8vw, 2.8rem);
+    font-size: clamp(1.68rem, 8vw, 2.15rem);
   }
 
   .mbt-owner-section__text p {
@@ -5570,7 +5596,7 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-services-showcase__title {
-    font-size: clamp(2rem, 10vw, 2.9rem);
+    font-size: clamp(1.8rem, 8.8vw, 2.35rem);
   }
 
   .mbt-capabilities-carousel {
@@ -5589,7 +5615,7 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-capabilities-carousel__title {
-    font-size: clamp(2.15rem, 10vw, 3.15rem);
+    font-size: clamp(1.9rem, 9vw, 2.45rem);
   }
 
   .mbt-capabilities-carousel__actions {
@@ -5689,7 +5715,7 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-portfolio-showcase__title {
-    font-size: clamp(2.2rem, 10vw, 3.2rem);
+    font-size: clamp(1.95rem, 9.2vw, 2.5rem);
   }
 
   .mbt-portfolio-showcase__intro {
@@ -5720,7 +5746,7 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-testimonials-showcase__title {
-    font-size: clamp(2.15rem, 10vw, 3.05rem);
+    font-size: clamp(1.9rem, 9vw, 2.4rem);
   }
 
   .mbt-testimonials-showcase__ornament {
@@ -5892,11 +5918,11 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-service-areas__title-main {
-    font-size: clamp(2.15rem, 10vw, 2.85rem);
+    font-size: clamp(1.85rem, 8.6vw, 2.3rem);
   }
 
   .mbt-service-areas__title-accent {
-    font-size: clamp(1.8rem, 8.3vw, 2.45rem);
+    font-size: clamp(1.52rem, 7.2vw, 1.95rem);
   }
 
   .mbt-area-grid {
@@ -5940,7 +5966,7 @@ a.mbt-contact-section__detail-value:focus-visible {
 
   .mbt-footer__title {
     margin-bottom: 18px;
-    font-size: clamp(1.8rem, 8vw, 2.2rem);
+    font-size: clamp(1.55rem, 7vw, 1.95rem);
   }
 
   .mbt-footer__bottom {
