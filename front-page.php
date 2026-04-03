@@ -1,0 +1,16 @@
+<?php get_header(); ?>
+<?php get_template_part('template-parts/hero'); ?>
+<?php get_template_part('template-parts/logos'); ?>
+<?php get_template_part('template-parts/featured'); ?>
+<?php get_template_part('template-parts/services'); ?>
+<?php get_template_part('template-parts/capabilities'); ?>
+<?php get_template_part('template-parts/about'); ?>
+<?php get_template_part('template-parts/portfolio'); ?>
+<?php get_template_part('template-parts/testimonials-showcase'); ?>
+<?php get_template_part('template-parts/owner'); ?>
+<?php get_template_part('template-parts/contact'); ?>
+<?php get_template_part('template-parts/process'); ?>
+<?php get_template_part('template-parts/cta-form'); ?>
+<?php get_template_part('template-parts/faq'); ?>
+<?php get_template_part('template-parts/service-areas'); ?>
+<?php get_footer(); ?>

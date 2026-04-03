@@ -1,0 +1,16 @@
+/*
+Theme Name: My Business Theme
+Theme URI: https://example.com/
+Author: John Lloyd
+Author URI: https://johnlloyd.com/
+Description: Modular business theme with reusable sections, dropdown navigation, resilient image handling, and popup contact form support.
+Version: 1.0.0
+Requires at least: 6.4
+Tested up to: 6.7
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: my-business-theme
+*/
+
+/* Primary styles are loaded from assets/css/main.css */

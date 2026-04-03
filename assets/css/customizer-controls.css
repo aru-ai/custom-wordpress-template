@@ -1,0 +1,52 @@
+.mbt-repeater-control {
+  display: grid;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.mbt-repeater-control__list {
+  display: grid;
+  gap: 12px;
+}
+
+.mbt-repeater-item {
+  padding: 12px;
+  border: 1px solid #dcdcde;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.mbt-repeater-item__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.mbt-repeater-item__field {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.mbt-repeater-item__field:last-child {
+  margin-bottom: 0;
+}
+
+.mbt-repeater-item__label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1d2327;
+}
+
+.mbt-repeater-item input,
+.mbt-repeater-item textarea,
+.mbt-repeater-item select {
+  width: 100%;
+}
+
+.mbt-repeater-item textarea {
+  min-height: 96px;
+  resize: vertical;
+}
