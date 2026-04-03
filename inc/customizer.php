@@ -1764,7 +1764,7 @@ function mbt_customize_register(WP_Customize_Manager $wp_customize): void
     ]);
     $wp_customize->add_control('mbt_footer_services_list', [
         'label'       => __('Services List', 'my-business-theme'),
-        'description' => __('Enter one service per line.', 'my-business-theme'),
+        'description' => __('Fallback only. Used when there are no published Services entries yet. Enter one service per line.', 'my-business-theme'),
         'section'     => 'mbt_footer_section',
         'type'        => 'textarea',
     ]);

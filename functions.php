@@ -3,7 +3,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('MBT_VERSION', '1.1.71');
+define('MBT_VERSION', '1.1.76');
 define('MBT_DIR', get_template_directory());
 define('MBT_URI', get_template_directory_uri());
 
@@ -37,7 +37,6 @@ function mbt_setup(): void
 
     register_nav_menus([
         'primary' => __('Primary Menu', 'my-business-theme'),
-        'footer'  => __('Footer Menu', 'my-business-theme'),
     ]);
 
     add_image_size('mbt-service', 900, 700, true);

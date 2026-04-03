@@ -14,6 +14,7 @@ $footer_credit_url     = mbt_sanitize_header_link_target(get_theme_mod('mbt_foot
 $footer_phone          = mbt_get_theme_mod_string('mbt_contact_phone', __('0435 777 797', 'my-business-theme'));
 $footer_email          = mbt_get_theme_mod_string('mbt_contact_email', __('hello@lumicabinets.com.au', 'my-business-theme'));
 $footer_address        = mbt_get_theme_mod_string('mbt_contact_address', __('Melbourne, Victoria, Australia', 'my-business-theme'));
+$footer_service_links  = mbt_get_footer_service_links();
 $footer_services       = mbt_get_footer_services_items();
 $footer_credit_text    = mbt_get_theme_mod_string('mbt_footer_credit_text', __('Made with care by UpRank', 'my-business-theme'));
 $footer_copyright_raw  = mbt_get_theme_mod_string('mbt_footer_copyright_text', __('Copyright {year} - {business_name}', 'my-business-theme'));
@@ -46,7 +47,17 @@ $footer_copyright_text = str_replace(
                     <h3 class="mbt-footer__title"><?php echo esc_html($footer_services_title); ?></h3>
                 <?php endif; ?>
 
-                <?php if ($footer_services) : ?>
+                <?php if ($footer_service_links) : ?>
+                    <ul class="mbt-footer__services">
+                        <?php foreach ($footer_service_links as $service_link) : ?>
+                            <li>
+                                <a href="<?php echo esc_url($service_link['url']); ?>">
+                                    <?php echo esc_html($service_link['title']); ?>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php elseif ($footer_services) : ?>
                     <ul class="mbt-footer__services">
                         <?php foreach ($footer_services as $service_item) : ?>
                             <li><?php echo esc_html($service_item); ?></li>

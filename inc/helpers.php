@@ -543,6 +543,41 @@ function mbt_get_footer_services_items(): array
     return $items ?: $defaults;
 }
 
+function mbt_get_footer_service_links(): array
+{
+    $services = get_posts([
+        'post_type'      => 'mbt_service',
+        'post_status'    => 'publish',
+        'posts_per_page' => -1,
+        'orderby'        => [
+            'menu_order' => 'ASC',
+            'date'       => 'DESC',
+        ],
+    ]);
+
+    if (!$services) {
+        return [];
+    }
+
+    $items = [];
+
+    foreach ($services as $service) {
+        $title = get_the_title($service);
+        $url   = get_permalink($service);
+
+        if ($title === '' || !$url) {
+            continue;
+        }
+
+        $items[] = [
+            'title' => $title,
+            'url'   => $url,
+        ];
+    }
+
+    return $items;
+}
+
 function mbt_get_section_graphic_url(string $key): string
 {
     $graphics = [
