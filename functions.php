@@ -3,7 +3,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('MBT_VERSION', '1.1.80');
+define('MBT_VERSION', '1.1.91');
 define('MBT_DIR', get_template_directory());
 define('MBT_URI', get_template_directory_uri());
 

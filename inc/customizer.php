@@ -215,7 +215,7 @@ function mbt_customize_register(WP_Customize_Manager $wp_customize): void
     ]);
     $wp_customize->add_control('mbt_root_font_size', [
         'label'       => __('Base Font Size (px)', 'my-business-theme'),
-        'description' => __('Scales most front-end text because the theme uses rem-based typography. Default: 15px.', 'my-business-theme'),
+        'description' => __('Scales most front-end text because the theme uses rem-based typography. Default: 15px, with mobile screens slightly smaller.', 'my-business-theme'),
         'section'     => 'mbt_global_styles',
         'type'        => 'number',
         'input_attrs' => [

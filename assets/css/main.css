@@ -4646,6 +4646,10 @@ a.mbt-contact-section__detail-value:focus-visible {
 }
 
 @media (max-width: 640px) {
+  html {
+    font-size: max(10px, calc(var(--mbt-root-font-size) - 5px));
+  }
+
   .mbt-logo-strip {
     padding: 14px 0;
   }
@@ -4721,30 +4725,33 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-review-pill {
-    width: min(100%, 262px);
-    min-height: 50px;
-    gap: 8px;
-    padding: 4px 12px 4px 4px;
+    width: fit-content;
+    max-width: min(100%, 206px);
+    min-height: 38px;
+    gap: 6px;
+    padding: 3px 9px 3px 3px;
     justify-content: flex-start;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   .mbt-review-pill__badge {
-    width: 40px;
-    height: 40px;
-    padding: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
   }
 
   .mbt-review-pill__stars {
-    font-size: 0.88rem;
+    font-size: 0.68rem;
+    line-height: 1;
   }
 
   .mbt-review-pill__stars strong {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .mbt-review-pill__copy small {
-    font-size: 0.66rem;
+    font-size: 0.5rem;
+    line-height: 1.05;
   }
 
   .mbt-heading-graphic--hero {
@@ -4846,11 +4853,16 @@ a.mbt-contact-section__detail-value:focus-visible {
     border-radius: 0;
   }
 
+  .mbt-hero__enquiry-main h2 {
+    max-width: calc(100% - min(35vw, 136px));
+    margin-bottom: 16px;
+  }
+
   .mbt-hero__portrait {
     position: absolute;
     top: auto;
-    bottom: calc(100% - clamp(100px, calc(200px - 16vw), 140px));
-    right: 8px;
+    bottom: calc(100% - clamp(118px, calc(208px - 16vw), 140px));
+    right: 0;
     margin: 0;
     justify-self: auto;
     pointer-events: none;
@@ -4858,7 +4870,7 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-hero__portrait img {
-    width: min(42vw, 166px);
+    width: min(36vw, 148px);
     max-width: none;
   }
 
@@ -4872,9 +4884,11 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-hero__enquiry-main h2 {
-    max-width: 58%;
+    max-width: none;
+    padding-right: min(34vw, 140px);
     margin-bottom: 16px;
-    line-height: 0.96;
+    font-size: clamp(1.72rem, 8.8vw, 2.2rem);
+    line-height: 0.98;
   }
 
   .mbt-about-business {
