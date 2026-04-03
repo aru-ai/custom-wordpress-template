@@ -18,6 +18,8 @@
   --mbt-header-overlay-fade: rgba(16, 14, 13, 0);
   --mbt-font-heading: "Cormorant Garamond", Georgia, serif;
   --mbt-font-body: "Manrope", Arial, sans-serif;
+  --mbt-root-font-size: 15px;
+  --mbt-kicker-font-size: calc(var(--mbt-root-font-size) * 0.7333333333);
   --mbt-container-width: 1280px;
   --mbt-section-space: 96px;
   --mbt-services-highlight: #c8ab6e;
@@ -46,6 +48,7 @@
 }
 
 html {
+  font-size: var(--mbt-root-font-size);
   scroll-behavior: smooth;
   overflow-x: clip;
   -ms-overflow-style: none;
@@ -162,7 +165,7 @@ button {
 .mbt-kicker {
   margin-bottom: 12px;
   color: var(--mbt-color-primary);
-  font-size: 12px;
+  font-size: var(--mbt-kicker-font-size);
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -4845,8 +4848,9 @@ a.mbt-contact-section__detail-value:focus-visible {
 
   .mbt-hero__portrait {
     position: absolute;
-    top: -190px;
-    right: 12px;
+    top: auto;
+    bottom: calc(100% - clamp(100px, calc(200px - 16vw), 140px));
+    right: 8px;
     margin: 0;
     justify-self: auto;
     pointer-events: none;
@@ -4854,7 +4858,7 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-hero__portrait img {
-    width: min(46vw, 178px);
+    width: min(42vw, 166px);
     max-width: none;
   }
 
@@ -5277,10 +5281,15 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-media-frame--owner-portrait {
-    margin-bottom: 10px;
+    margin-bottom: 0;
+  }
+
+  .mbt-owner-section__media {
+    order: 2;
   }
 
   .mbt-owner-section__content {
+    order: 1;
     padding-bottom: 0;
   }
 
@@ -5326,7 +5335,9 @@ a.mbt-contact-section__detail-value:focus-visible {
   }
 
   .mbt-owner-signature {
+    justify-items: center;
     margin-top: 22px;
+    text-align: center;
   }
 
   .mbt-owner-signature__image {

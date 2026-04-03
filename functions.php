@@ -3,7 +3,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('MBT_VERSION', '1.1.76');
+define('MBT_VERSION', '1.1.80');
 define('MBT_DIR', get_template_directory());
 define('MBT_URI', get_template_directory_uri());
 
@@ -157,6 +157,7 @@ function mbt_inline_css_variables(): void
     $logo_strip_duration    = mbt_sanitize_logo_strip_speed(get_theme_mod('mbt_logo_strip_speed', 28));
     $services_highlight     = sanitize_hex_color(get_theme_mod('mbt_services_highlight_color', '#c8ab6e')) ?: '#c8ab6e';
     $cta_status_color       = sanitize_hex_color(get_theme_mod('mbt_cta_status_color', '#7df33b')) ?: '#7df33b';
+    $root_font_size         = mbt_sanitize_root_font_size(get_theme_mod('mbt_root_font_size', 15));
 
     $vars = [
         '--mbt-color-primary'            => get_theme_mod('mbt_color_primary', '#c8ab6e'),
@@ -173,6 +174,7 @@ function mbt_inline_css_variables(): void
         '--mbt-header-overlay-fade'      => mbt_hex_to_rgba($header_color, 0),
         '--mbt-font-heading'             => mbt_css_font_stack(get_theme_mod('mbt_font_heading', 'Cormorant Garamond')),
         '--mbt-font-body'                => mbt_css_font_stack(get_theme_mod('mbt_font_body', 'Manrope')),
+        '--mbt-root-font-size'           => $root_font_size . 'px',
         '--mbt-container-width'          => absint(get_theme_mod('mbt_container_width', 1200)) . 'px',
         '--mbt-section-space'            => absint(get_theme_mod('mbt_section_spacing', 88)) . 'px',
         '--mbt-services-highlight'       => $services_highlight,

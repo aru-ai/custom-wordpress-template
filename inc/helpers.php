@@ -111,6 +111,15 @@ function mbt_sanitize_header_height($value): int
     return mbt_sanitize_absint_range($value, 80, 58, 180);
 }
 
+function mbt_sanitize_root_font_size($value): float
+{
+    if (!is_numeric($value)) {
+        return 15.0;
+    }
+
+    return max(10.0, min(25.0, round((float) $value, 1)));
+}
+
 function mbt_sanitize_logo_strip_speed($value): int
 {
     return mbt_sanitize_absint_range($value, 28, 12, 80);

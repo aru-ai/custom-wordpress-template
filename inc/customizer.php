@@ -209,6 +209,22 @@ function mbt_customize_register(WP_Customize_Manager $wp_customize): void
         'choices' => mbt_font_choices(),
     ]);
 
+    $wp_customize->add_setting('mbt_root_font_size', [
+        'default'           => 15,
+        'sanitize_callback' => 'mbt_sanitize_root_font_size',
+    ]);
+    $wp_customize->add_control('mbt_root_font_size', [
+        'label'       => __('Base Font Size (px)', 'my-business-theme'),
+        'description' => __('Scales most front-end text because the theme uses rem-based typography. Default: 15px.', 'my-business-theme'),
+        'section'     => 'mbt_global_styles',
+        'type'        => 'number',
+        'input_attrs' => [
+            'min'  => 10,
+            'max'  => 25,
+            'step' => 0.5,
+        ],
+    ]);
+
     $wp_customize->add_setting('mbt_container_width', [
         'default'           => 1200,
         'sanitize_callback' => 'absint',

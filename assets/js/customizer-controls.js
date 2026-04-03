@@ -138,7 +138,13 @@
     render();
   };
 
-  document.addEventListener('DOMContentLoaded', function () {
+  const initControls = function () {
     document.querySelectorAll('.mbt-repeater-control').forEach(renderControl);
-  });
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initControls);
+  } else {
+    initControls();
+  }
 }());
